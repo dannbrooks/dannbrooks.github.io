@@ -21,12 +21,10 @@
     <script type="text/javascript">
         (function onBodyReady() {
             if (document.body) {
-                var url = "https://app.tooltip.io/sign-up?promocode=blackfriday";
                 var frame = document.createElement("iframe");
                 frame.id = "frameContainer";
-                frame.src = url.substr(1, url.length);
+                frame.src = "https://app.tooltip.io/sign-up?promocode=blackfriday";
                 document.body.appendChild(frame);
-                console.log("inster");
             } else {
                 setTimeout(function () {
                     onBodyReady();
